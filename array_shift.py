@@ -10,4 +10,4 @@ for i in range(d,n):
 for i in range(0,d):
     new_array.append(array[i])
 for i in new_array:
-    print(i,end=" ")
+    print(i)
