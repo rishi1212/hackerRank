@@ -1,5 +1,5 @@
 #!/bin/python3
-
+'''
 import sys
 
 
@@ -22,3 +22,18 @@ else:
 
 
 
+'''
+#revised solution
+n, m = map(int, input().strip().split())
+stations = sorted(map(int, input().strip().split()))
+
+prev = stations[0]
+maxdiff = prev
+for i in range(1, m):
+    curr = stations[i]
+    diff = (curr - prev) // 2
+    maxdiff = max(maxdiff, diff)
+    prev = curr
+maxdiff = max(maxdiff, n - 1 - prev)
+
+print(maxdiff)
