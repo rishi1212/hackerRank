@@ -15,6 +15,6 @@ for i in range(p,q+1):
 
 if(len(number)>0):
     for i in number:
-        print(i,end=' ')
+        print(i,)
 else:
     print("INVALID RANGE")
