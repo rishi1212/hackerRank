@@ -1,4 +1,4 @@
- = int(input())
+n = int(input())
 a = [int(x) for x in input().split(' ')]
 def printArr(arr):
     s = '' #NO SPACE
