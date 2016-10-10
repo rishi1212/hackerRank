@@ -1,6 +1,9 @@
 import math
-from math import log2
 from math import floor
+
+from numpy.ma import log2
+
+
 def genlist(x):
     if x==1:
         return False
