@@ -14,4 +14,4 @@ for i in range(max(a),min(b)+1):
                 break
         else:
             ct+=1
-print ct
+print(ct)
