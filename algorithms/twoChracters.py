@@ -1,7 +1,7 @@
 import sys
 #sys.stdin=open("in","r")
-n=int(raw_input())
-s=raw_input()
+n=int(input())
+s=input()
 assert s.isalpha()
 ans=0
 for i in range(0,26):
@@ -23,4 +23,4 @@ for i in range(0,26):
         if flag == 1 and l>1:
             ans=max(ans,l)
 
-print ans
+print(ans)
