@@ -11,7 +11,7 @@ for _ in range(t):
         continue
 
     end = -1
-    for j in xrange(start + 1, len(word)):
+    for j in range(start + 1, len(word)):
         if word[start] < word[j]:
             end = j
 
