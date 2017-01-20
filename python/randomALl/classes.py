@@ -26,7 +26,7 @@ B = complex(*map(float, input().strip().split()))
 
 print(A + B)
 print(A - B)
-print A*B
+print(A * B)
 print A/B
 print A.mod()
 print B.mod()
