@@ -9,4 +9,4 @@ if not m:
     print("-1")
 else:
     for i in m:
-        print i
+        print(i)
