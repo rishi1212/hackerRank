@@ -5,7 +5,7 @@ list1=[]
 n, m = map(int,input().split())
 
 for i in range(0,n):
-    d[raw_input()].append(i+1)
+    d[input()].append(i+1)
 
 for i in range(0,m):
     list1=list1+[raw_input()]
