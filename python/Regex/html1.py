@@ -17,7 +17,7 @@ class MyHTMLParser(HTMLParser):
 
 parser = MyHTMLParser()
 texts = str()
-for _ in range(int(raw_input().strip())):
-    texts += raw_input()
+for _ in range(int(input().strip())):
+    texts += input()
 texts = re.sub(r"\<\!--.*?--\>", "", texts)
 parser.feed(texts)
