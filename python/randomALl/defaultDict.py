@@ -2,7 +2,7 @@ from collections import defaultdict
 d = defaultdict(list)
 list1=[]
 
-n, m = map(int,raw_input().split())
+n, m = map(int,input().split())
 
 for i in range(0,n):
     d[raw_input()].append(i+1)
