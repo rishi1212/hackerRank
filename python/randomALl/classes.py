@@ -13,7 +13,7 @@ class complex:
         try:
             return self.__mul__(complex(other.real, -1*other.imag)).__mul__(complex(1.0/(other.mod().real)**2, 0))
         except ZeroDivisionError as e:
-            print e
+            print(e)
             return None
     def mod(self):
         return complex(pow(self.real**2+self.imag**2, 0.5), 0)
