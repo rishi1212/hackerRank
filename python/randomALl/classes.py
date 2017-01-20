@@ -21,7 +21,7 @@ class complex:
         return str(("%."+"%df"%precision)%float(self.real))+('+' if self.imag>=0 else '-')+str(("%."+"%df"%precision)%float(abs(self.imag)))+'i'
 
 
-A = complex(*map(float, raw_input().strip().split()))
+A = complex(*map(float, input().strip().split()))
 B = complex(*map(float, raw_input().strip().split()))
 
 print A+B
