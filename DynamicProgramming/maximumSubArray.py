@@ -1,6 +1,6 @@
 for _ in range(input()):
     n = input()
-    arr = map(int,raw_input().split())
+    arr = map(int,input().split())
     max_sum = -999999999
     c_sum = 0
     sum1 = 0
@@ -14,4 +14,4 @@ for _ in range(input()):
             sum1 = 0
     if c_sum == 0:
         c_sum = max(arr)
-    print max_sum,c_sum
+    print(max_sum, c_sum)

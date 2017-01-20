@@ -8,5 +8,5 @@ def fibonacci(a, b, n):
         second = cur
     return cur
 
-a, b, n = (int(x) for x in raw_input().split())
-print fibonacci(a, b, n)
+a, b, n = (int(x) for x in input().split())
+print(fibonacci(a, b, n))

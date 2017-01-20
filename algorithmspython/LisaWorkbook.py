@@ -1,5 +1,5 @@
-N, K = map(int, raw_input().split())
-T = map(int, raw_input().split())
+N, K = map(int, input().split())
+T = map(int, input().split())
 
 cnt = 0
 i = 0
@@ -14,4 +14,4 @@ while i < N:
     if m > T[i]:
         i += 1
         m = 1
-print cnt
+print(cnt)

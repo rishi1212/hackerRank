@@ -1,11 +1,11 @@
-m, n, r = [int(i) for i in raw_input().strip().split(' ')]
+m, n, r = [int(i) for i in input().strip().split(' ')]
 
-mat = [[int(i) for i in raw_input().strip().split(' ')] for _ in xrange(m)]
+mat = [[int(i) for i in input().strip().split(' ')] for _ in xrange(m)]
 
 def printMat(mat):
     for row in mat:
         for elem in row:
-            print elem,
+            print(elem, end=' ')
         print
 
 def rotateMatrix(matr, r):
