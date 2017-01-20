@@ -15,4 +15,4 @@ for _ in range(int(input())):
         tests = map(bool,[x.match(l) for x in spc])
     else:
         tests = map(bool,[x.match(l) for x in reg])
-    print 'Valid' if all(tests) else 'Invalid'
+    print('Valid' if all(tests) else 'Invalid')
