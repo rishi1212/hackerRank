@@ -9,7 +9,7 @@ class MyHTMLParser(HTMLParser):
         print("End   :", tag)
 
     def handle_startendtag(self, tag, attrs):
-        print "Empty :", tag
+        print("Empty :", tag)
         for attr in attrs:
             print "->", attr[0], ">", attr[1]
 parser = MyHTMLParser()
