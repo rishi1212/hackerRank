@@ -22,7 +22,7 @@ class complex:
 
 
 A = complex(*map(float, input().strip().split()))
-B = complex(*map(float, raw_input().strip().split()))
+B = complex(*map(float, input().strip().split()))
 
 print A+B
 print A-B
