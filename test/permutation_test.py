@@ -19,7 +19,7 @@ for _ in range(t):
     a = word[start + 1:]
     a.sort()
 
-    for j in xrange(start + 1, len(word)):
+    for j in range(start + 1, len(word)):
         word[j] = a[j - start - 1]
 
     print "".join(word)
