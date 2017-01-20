@@ -22,4 +22,4 @@ for _ in range(t):
     for j in range(start + 1, len(word)):
         word[j] = a[j - start - 1]
 
-    print "".join(word)
+    print("".join(word))
