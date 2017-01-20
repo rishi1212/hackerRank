@@ -2,18 +2,18 @@ from math import pow
 
 
 class complex:
-    def __init__(self, real, imag):
+    def __init__(self, real, image):
         self.real = real
-        self.imag = imag
+        self.image = image
 
     def __add__(self, other):
-        return complex(self.real + other.real, self.imag + other.imag)
+        return complex(self.real + other.real, self.image + other.imag)
 
     def __sub__(self, other):
-        return complex(self.real - other.real, self.imag - other.imag)
+        return complex(self.real - other.real, self.image - other.imag)
 
     def __mul__(self, other):
-        return complex(self.real * other.real - self.imag * other.imag, self.real * other.imag + self.imag * other.real)
+        return complex(self.real * other.real - self.image * other.imag, self.real * other.imag + self.image * other.real)
 
     def __div__(self, other):
         try:
@@ -23,11 +23,11 @@ class complex:
             return None
 
     def mod(self):
-        return complex(pow(self.real ** 2 + self.imag ** 2, 0.5), 0)
+        return complex(pow(self.real ** 2 + self.image ** 2, 0.5), 0)
 
     def __str__(self, precision=2):
-        return str(("%." + "%df" % precision) % float(self.real)) + ('+' if self.imag >= 0 else '-') + str(
-            ("%." + "%df" % precision) % float(abs(self.imag))) + 'i'
+        return str(("%." + "%df" % precision) % float(self.real)) + ('+' if self.image >= 0 else '-') + str(
+            ("%." + "%df" % precision) % float(abs(self.image))) + 'i'
 
 
 A = complex(*map(float, input().strip().split()))
