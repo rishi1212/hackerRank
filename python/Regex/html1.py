@@ -1,5 +1,7 @@
 from HTMLParser import HTMLParser
 import re
+
+
 class MyHTMLParser(HTMLParser):
     def handle_starttag(self, tag, attrs):
         print("Start :", tag)
