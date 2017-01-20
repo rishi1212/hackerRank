@@ -2,7 +2,7 @@ t = input()
 for _ in range(t):
     word = list(input().strip())
     start = -1
-    for i in xrange(0, len(word) - 1):
+    for i in range(0, len(word) - 1):
         if word[i] < word[i + 1]:
             start = i
 
