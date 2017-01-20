@@ -10,7 +10,7 @@ repeating = r'^(?:(.)(?!-*\1-*\1-*\1))*$'
 reg = map(re.compile, [normal, repeating])
 spc = map(re.compile, [special, repeating])
 for _ in range(int(input())):
-    l = raw_input().strip()
+    l = input().strip()
     if l.find('-') >=0:
         tests = map(bool,[x.match(l) for x in spc])
     else:
