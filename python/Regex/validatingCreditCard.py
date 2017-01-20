@@ -1,5 +1,6 @@
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 import re
+
 # Check proper contents/starting/count w/o hypen
 normal = r'^([4-6])([0-9]){15}$'
 # Proper contents/separation/count with hypen
@@ -11,8 +12,8 @@ reg = map(re.compile, [normal, repeating])
 spc = map(re.compile, [special, repeating])
 for _ in range(int(input())):
     l = input().strip()
-    if l.find('-') >=0:
-        tests = map(bool,[x.match(l) for x in spc])
+    if l.find('-') >= 0:
+        tests = map(bool, [x.match(l) for x in spc])
     else:
-        tests = map(bool,[x.match(l) for x in reg])
+        tests = map(bool, [x.match(l) for x in reg])
     print('Valid' if all(tests) else 'Invalid')
