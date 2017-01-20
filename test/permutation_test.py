@@ -7,7 +7,7 @@ for _ in range(t):
             start = i
 
     if start == -1:
-        print "no answer"
+        print("no answer")
         continue
 
     end = -1
