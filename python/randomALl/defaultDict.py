@@ -14,4 +14,4 @@ for i in list1:
     if i in d:
         print(" ".join(map(str, d[i])))
     else:
-        print -1
+        print(-1)
