@@ -1,4 +1,3 @@
-author = "himanshu malhotra"
 aa, bb = 0, 0
 n, m = map(int, input().split())
 a = map(int, input().split())
