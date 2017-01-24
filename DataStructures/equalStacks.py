@@ -1,6 +1,6 @@
 n1, n2, n3 = map(int,input().split())
 H1 = map(int,input().split())[::-1]
-H2 = map(int, raw_input().split())[::-1]
+H2 = map(int,input().split())[::-1]
 H3 = map(int, raw_input().split())[::-1]
 
 sum_h1 = sum(H1)
