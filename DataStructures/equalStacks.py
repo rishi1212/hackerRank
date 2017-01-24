@@ -17,4 +17,4 @@ while not (sum_h1 == sum_h2 and sum_h2 == sum_h3):
     if sum_h3 > sum_h1 or sum_h3 > sum_h2:
         t = H3.pop()
         sum_h3 -= t
-print sum_h1
+print(sum_h1)
