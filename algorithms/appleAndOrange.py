@@ -1,7 +1,5 @@
 #!/bin/python
 
-import sys
-
 from Tools.scripts.treesync import raw_input
 
 s, t = raw_input().strip().split(' ')
