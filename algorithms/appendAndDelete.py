@@ -1,7 +1,3 @@
-
-#!/bin/python
-import sys
-
 s = input().strip()
 t = input().strip()
 k = int(input().strip())
