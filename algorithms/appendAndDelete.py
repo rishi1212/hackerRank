@@ -14,7 +14,7 @@ count = 0
 
 for i in range(length):
     if s[i] == t[i]:
-        count = count + 1
+        count += 1
     else:
         break
 
