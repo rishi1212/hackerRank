@@ -19,4 +19,4 @@ while not (sum_h1 == sum_h2 and sum_h2 == sum_h3):
         sum_h3 -= t
 print(sum_h1)
 
-
+#hello git test
